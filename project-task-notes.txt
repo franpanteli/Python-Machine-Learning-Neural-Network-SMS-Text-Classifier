@@ -1,0 +1,44 @@
+This txt file contains my notes on the project description, found at https://www.freecodecamp.org/learn/machine-learning-with-python/machine-learning-with-python-projects/neural-network-sms-text-classifier
+
+About the project: 
+	-> The challenge is called 'Neural Network SMS Text Classifier'
+	-> We are creating a machine learning model to classify SMS messages 	into either "ham" or "spam"
+	-> "ham" <- this is a message sent by a friend 
+	-> "spam" <- this is a message sent by a spammer 
+		-> This could be an advertiser
+		-> This could also be a message sent by a company 
+		-> It is anything sent by an entity which isn't a friend or a family member
+
+Submitting the project files: 
+	-> The project is in Google Colaboratory 
+	-> There are unit tests for the code in the notebook 
+	-> Once the code passes the unit tests, then you submit the link to it to the same page which these notes are made on 
+	-> The link you are submitting has to be shareable with everybody 
+
+The challenge:
+	-> We are creating a machine learning model 
+	-> Clarifying SMS messages into "ham" or "spam"
+	-> "ham" messages are normal ones which were sent by friends
+	-> "spam" ones are messages which can include ads or ones sent by companies 
+
+The function used to do this:
+	-> We are creating a function called predict_message
+	-> This function takes a string as an argument and returns a list
+	-> The first element in the list which it returns is a number between 0 and 1 which is normalised into a probability
+	-> 0 is how likely the string which was input into it is a "ham" and 1 is how likely the string which was input into it is a "spam" 
+		-> It's a score between 0 and 1 which indicates how likely the message is to be from an unfriendly sender  
+
+The dataset:
+	-> We are using the SMS Spam Collection dataset
+	-> This project is an example of NLP -> we are taking the input SMS messages (strings) and performing binary classification on them 
+	-> That dataset is grouped into test and train data for the model 
+	-> We are taking that data and training it on a model to predict which of the messages are fraudulent and which aren't 
+	-> We clean the data, train the model on it 
+	-> And then we run unit tests to see if it works as well as it should 
+
+Cells we are given:
+	-> The first two cells import the libraries and data
+	-> The last two cells run unit tests on the function which we're defining with the model 
+	-> These tests work on the portion of the data which the model wasn't trained on 
+	-> The function which we're defining makes the predictions about the trustworthiness of the sender of the SMS with
+
